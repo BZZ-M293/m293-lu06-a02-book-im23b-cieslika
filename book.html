@@ -10,11 +10,21 @@
 </header>
 <main>
   <form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
-    <input name="title" type="text" maxlength="30" minlength="2" placeholder="Buchtitel"/>
-    <input name="author" type="text" minlength="5" maxlength="40" placeholder="Autoren"/>
-    <input name="price" type="number" min="0.05" max="99.95" step="0.01" placeholder="Preis"/>
-    <input name="start_date" type="date" format="dd.mm.yyyy" placeholder="Erscheinungsdatum"/>
-    <input name="nr" type="number" min="1" max="9" placeholder="Auflage"/>
+    <input id="title" name="title" type="text" maxlength="30" minlength="2" placeholder="Buchtitel"/>
+    <label for="title">Buchtitel</label>
+    <br>
+    <input id="author" name="author" type="text" minlength="5" maxlength="40" placeholder="Autor"/>
+    <label for="author">Autor</label>
+    <br>
+    <input id="price" name="price" type="number" min="0.05" max="99.95" step="0.01" placeholder="Preis"/>
+    <label for="price">Preis</label>
+    <br>
+    <input id="start_date" name="start_date" type="date" format="dd.mm.yyyy" placeholder="Erscheinungsdatum"/>
+    <label for="start_date">Erscheinungsdatum</label>
+    <br>
+    <input id="nr" name="nr" type="number" min="1" max="9" placeholder="Auflage"/>
+    <label for="nr">Auflage</label>
+    <br>
     <input type="submit"/>
     <input type="reset"/>
   </form>
